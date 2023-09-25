@@ -11,14 +11,20 @@ docker rm -f mysql-springboot-container springboot-docker-container
 docker-compose -f docker-compose.dev.yml up --build
 ```
 ### 4. API for test
+#### 4.1. End-point: Insert Student
+#### *Method: POST*
 ```
 http://localhost:8085/students/insertStudent
 ```
-> Method: POST
-> param 1: "name":String
-> param 2: "birthYear":Integer
+#### *Query Params*
+
+|Param| value|
+|---|------|
+|name| Duc Thanh |
+|birthYear| 2002 |
+#### 4.1. End-point: Insert Student
+#### *Method: GET*
 ```
 http://localhost:8085/students/showAll
 ```
-> Method: GET
-### Good luck ! 
+### Thank you ! 😀 
