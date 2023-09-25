@@ -8,8 +8,9 @@ docker rm -f mysql-springboot-container springboot-docker-container
 ```
 ### 3. Download all dependencies and start service ! 
 ```
-docker-compose -f docker-compose.dev.yml up --build
+docker-compose -f docker-compose.dev.yml up -d --build
 ```
+> Option "-d" leaves the service execution running in the background
 ### 4. API for test
 #### 4.1. End-point: Insert Student
 #### *Method: POST*
